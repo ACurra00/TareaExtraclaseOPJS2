@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <title>Gestión de Pedidos</title>
+    <meta name="author" content="Melani Sosa and Armando Joel Curra">
+    <meta name="date" content="15/07/2024">
+    <meta name="copyright" content="Todos los derechos reservados para Melani Sosa y Armando Joel Curra">
+    <meta name="keywords" content="Pedidos, Restaurante, Menu, plato">
+    <meta name="description" content="Sistema de Pedidos de Restaurante Crea una clase 
+        PedidoBase con propiedades cliente y fecha. Crea una clase Pedido que herede de PedidoBase
+       y añada las propiedades plato y cantidad. Implementa un menú para realizar pedidos, cancelar pedidos y mostrar todos los pedidos.">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="expires" content="0">
+</head>
+
+<body>
+    <h1>Gestión de Pedidos</h1>
+    
+    <form id="pedidoForm">
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" name="cliente" required><br><br>
+        
+        <label for="plato">Plato:</label>
+        <input type="text" id="plato" name="plato" required><br><br>
+        
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required><br><br>
+        
+        <button type="submit">Realizar Pedido</button>
+    </form>
+    
+    <button id="mostrarPedidosBtn">Mostrar Pedidos</button>
+    <button id="cancelarPedidoBtn">Cancelar Pedido</button>
+    
+    <div id="pedidos"></div>
+    
+    <script type="text/javascript" src="TareaExtraclaseOPJS2.js"></script>
+</body>
+</html>
